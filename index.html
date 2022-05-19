@@ -11,7 +11,11 @@
          }
          h1{
             margin-left: auto;
-            margin-right: auto;
+             margin-right: auto;
+             margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 10px;
              float: center;
              text-align: center;
@@ -25,17 +29,14 @@
             text-align: right;
         }
         head{
-            text-align: center;
+            text-align: left;
         }
         header{
-           text-align: left;
+            text-align: left;
         }
-        article{
-            text-align: right;
-        }
+
         article p{
-            text-align: left;  
-            background-color:rgb(255, 0, 0);  
+            background-color:rgb(255, 0, 0)
         }
         header p{
             background-color:rgb(25, 0, 255) ;
@@ -44,20 +45,36 @@
             background-color: rgb(255, 251, 0);
             text-align: center;
         }
-
+        .pic {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+        }
+       .pic2{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+       }
     </style>
 </head>
 <body>
     <header>
         <h1>Tokmak</h1>
         <p>Tokmak (Ukrainian: Токмак, pronounced [tokˈmɑk]) is a city in Polohy Raion in the Zaporizhzhia Oblast (province) of south-central Ukraine. The city stands on the River Tokmachka, a tributary of the River Tokmak. Prior to 2020, it served as the administrative center of the Tokmak Raion (district). Its population is approximately 30,132 (2021 est.)</p>
-        <img src="picture1.JPG">
-        <p>History merchant building in Tokmak</p>
+        <div class="pic">
+            <img src="picture1.JPG">
+            <p>History merchant building in Tokmak</p>
+        </div>
     </header>
 <article>
-    <img src="picture3.jpeg">
-    <p>Diesel machine monument</p>
-    <footer>Artem Popov  9 May</footer>
+    <div class="pic2">
+        <p>Diesel machine monument</p>
+        <img src="picture3.jpeg">
+    </div>
 </article>
+<footer>Artem 9 may</footer>
 </body>
 </html>
